@@ -15,7 +15,7 @@
     </div>
     <form action="staff_add_check.php" method="post">
       <p>スタッフ名を入力してください</p>
-      <input type="text" name="furigana" style="width: 100px;" id="" />
+      <input type="text" name="name" style="width: 200px;" id="" />
       <p>パスワードを入力してください</p>
       <input type="password" name="pass" style="width: 100px" id="">
       <p>確認のためパスワードをもう1度入力してください</p>
