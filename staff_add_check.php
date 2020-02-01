@@ -21,16 +21,23 @@ $staff_pass = esc($staff_pass);
 $staff_pass2 = esc($staff_pass2);
 
 if ($staff_name == '') {
-  print 'スタッフ名が入力されていません';
+  print 'スタッフ名が入力されていません<br />';
 } else {
-  echo "こんにちは\t$staff_name\tさん!!";
+  echo "こんにちは\t$staff_name\tさん!!<br />";
 }
-$staff_pass == '' && print 'パスワードが入力されていません';
-$staff_pass != $staff_pass2 && print 'パスワードが一致しません';
-if ($staff_name = "" || $staff_pass = "" || $staff_pass != $staff_pass2) {
-  print '<form>';
-  print '<input type="button" onclick="history.back()" value="back">';
-  print '</>';
+
+if ($staff_pass == '') {
+  print 'パスワードが入力されていません<br />';
+}
+if ($staff_pass != $staff_pass2) {
+  print 'パスワードが一致しません<br />';
+}
+if ($staff_name == '' || $staff_pass == '' || $staff_pass != $staff_pass2) {
+  echo <<<EOM
+  <form>
+    <input type="button" onclick="history.back()" value="back">
+  </form>
+  EOM;
 } else {
   $staff_pass = md5($staff_pass);
   echo <<<EOM
