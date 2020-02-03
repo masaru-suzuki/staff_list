@@ -10,7 +10,7 @@
 
     // $dsn = 'mysql:dbname=shop;host=localhost;charset=utf8';
     $user = 'root';
-    $password = '';
+    $password = 'secret';
     // $dbh = new PDO($dsn, $user, $password);
     // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // $sql = 'INSERT INTO mst_staff(name,password)VALUES(?,?)';
